@@ -65,6 +65,7 @@ export default function /*  */styleConstructor(theme: Theme = {}) {
   reservations: {
       flex: 1,
       marginTop: 155,
+      // @ts-ignore
       backgroundColor: appStyle.reservationsBackgroundColor || appStyle.backgroundColor //TODO: remove 2nd in V2
   },
     scrollPadStyle: {

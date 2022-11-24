@@ -129,7 +129,7 @@ export default class Agenda extends Component<AgendaProps, State> {
 
     this.knobTracker = new VelocityTracker();
     this.state.scrollY.addListener(({value}) => this.knobTracker.add(value));
-    this.fullCalendarVisible = true;
+    // this.fullCalendarVisible = true;
   }
 
   componentDidMount() {
@@ -194,7 +194,7 @@ export default class Agenda extends Component<AgendaProps, State> {
     this.setState({calendarScrollable: enable});
 
     this.props.onCalendarToggled?.(enable);
-    this.fullCalendarVisible = true;
+    // this.fullCalendarVisible = true;
     // Enlarge calendarOffset here as a workaround on iOS to force repaint.
     // Otherwise the month after current one or before current one remains invisible.
     // The problem is caused by overflow: 'hidden' style, which we need for dragging
@@ -229,7 +229,7 @@ export default class Agenda extends Component<AgendaProps, State> {
     });
 
     this.props.onCalendarToggled?.(false);
-    this.fullCalendarVisible = false;
+    // this.fullCalendarVisible = false;
 
     if (!optimisticScroll) {
       this.setState({topDay: day.clone()});
