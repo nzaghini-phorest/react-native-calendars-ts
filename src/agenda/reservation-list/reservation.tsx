@@ -89,7 +89,7 @@ class Reservation extends Component<ReservationProps> {
             {date.getDate()}
           </Text>
           <Text allowFontScaling={false} style={[this.style.dayText, today]}>
-            {dayNames ? dayNames[date.getDay()] : undefined}
+            {XDate.locales[XDate.defaultLocale].dayNamesShort[date.getDay()]}
           </Text>
         </View>
       );

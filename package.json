@@ -6,7 +6,7 @@
   "description": "React Native Calendar Components",
   "scripts": {
     "build": "xcodebuild -project ios/CalendarsExample.xcodeproj build",
-    "build:ts": "tsc",
+    "build:ts": "tsc --outDir dist",
     "build:dev": "tsc --noEmit",
     "build:docs": "node ./scripts/build-docs.js",
     "e2e": "node ./scripts/test-e2e.js --release",
